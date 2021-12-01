@@ -86,9 +86,9 @@ host pool.
 
       - Select the **Registration type** you want to use. Which one you use depends on your needs:
 
-    - **On-demand registration** postpones the full registration of the MSIX application until the user starts the application. This is the registration type we recommend you use.
+        - **On-demand registration** postpones the full registration of the MSIX application until the user starts the application. This is the registration type we recommend you use.
 
-    - **Log on blocking** only registers while the user is signing in. We don't recommend this type because it can lead to longer sign-in times for users.
+        - **Log on blocking** only registers while the user is signing in. We don't recommend this type because it can lead to longer sign-in times for users.
 
 7.  For **State**, select your preferred state.
     -  The **Active** status lets users interact with the package.
