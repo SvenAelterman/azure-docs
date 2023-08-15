@@ -64,7 +64,7 @@ When you are provisioning VMs with cloud-init, there are five stages of boot, wh
 
    After this stage, cloud-init sends a signal to the Azure platform that the VM has been provisioned successfully. Some modules may have failed, not all module failures result in a provisioning failure.
 
-4. [Cloud-init Config Stage](https://cloudinit.readthedocs.io/en/latest/topics/boot.html#config): At this stage, the modules in `cloud_config_modules` defined and listed in `/etc/cloud/cloud`.cfg runs.
+4. [Cloud-init Config Stage](https://cloudinit.readthedocs.io/en/latest/topics/boot.html#config): At this stage, the modules in `cloud_config_modules` defined and listed in `/etc/cloud/cloud.cfg` runs.
 5. [Cloud-init Final Stage](https://cloudinit.readthedocs.io/en/latest/topics/boot.html#final): At this final stage, the modules in `cloud_final_modules`, listed in `/etc/cloud/cloud.cfg`, runs. Here modules that need to be run late in the boot process run, such as package installations and run scripts etc.
 
    - During this stage, you can run scripts by placing them in the directories under `/var/lib/cloud/scripts`:
